@@ -6,6 +6,7 @@
                <input type="text"
                       class="form-control"
                       id="first_name"
+                      name="first_name"
                       v-model.trim="employee.first_name"
                       placeholder="Введите имя"
                       v-validate="'required|max:60'"
