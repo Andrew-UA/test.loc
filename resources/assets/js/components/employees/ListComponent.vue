@@ -33,7 +33,7 @@
                     sortable="custom"
             >
                 <template slot-scope="scope">
-                    {{scope.row.position.name}}
+                    <a v-bind:href="'position/'+scope.row.position_id+'/edit'" class="btn btn-warning">{{scope.row.position.name}}</a>
                 </template>
             </el-table-column>
 

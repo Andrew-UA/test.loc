@@ -91269,10 +91269,16 @@ var render = function() {
                     key: "default",
                     fn: function(scope) {
                       return [
-                        _vm._v(
-                          "\n                " +
-                            _vm._s(scope.row.position.name) +
-                            "\n            "
+                        _c(
+                          "a",
+                          {
+                            staticClass: "btn btn-warning",
+                            attrs: {
+                              href:
+                                "position/" + scope.row.position_id + "/edit"
+                            }
+                          },
+                          [_vm._v(_vm._s(scope.row.position.name))]
                         )
                       ]
                     }
